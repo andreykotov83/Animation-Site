@@ -10,7 +10,7 @@ document.addEventListener( "DOMContentLoaded", function ( event ) {
 
 	// fullpage customization
 	$( '#fullpage' ).fullpage( {
-		sectionsColor: [ '#FFF', '#E6E6E6', '#E6E6E6', '#FFF', '#FFF' ],
+		sectionsColor: [ '#FFFFF00', '#E6E6E6', '#E6E6E6', '#FFF', '#FFF' ],
 		sectionSelector: '.vertical-scrolling',
 		slideSelector: '.horizontal-scrolling',
 		slidesNavigation: true,

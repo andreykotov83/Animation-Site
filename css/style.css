@@ -1,10 +1,6 @@
-.swiper--fullscreen {
-	width: 100vw;
-	height: 100vh;
-}
-.swiper-slide--fullscreen {
-	width: 100vw;
-	height: 100vh;
+.nav {
+	position: absolute;
+	z-index: 10;
 }
 
 h2,p{

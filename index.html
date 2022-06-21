@@ -5,115 +5,157 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8" />
 	<title>Animation-Site</title>
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="./css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap-grid.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
 </head>
 
 <body>
-	<div class="swiper swiper--fullscreen">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide swiper-slide--fullscreen" data-hash="slide1">
-				<div class="video-background">
-					<div class="video-foreground">
-						<div class="section active" id="section0">
-							<video id="video" autoplay loop muted poster="">
-									<source  src="./img/bg-video.mp4" type="video/mp4" />
-							</video>
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="screen1">
-						<div class="screen1__logo">
-							<img src="./img/logo-hero.png" alt="logo">
-						</div>
-						<div class="screen1__title">
-							<h2 class="title">
-								WHATEVER THE ROAD AHEAD OF US <br> TOGETHER WE RIDE <br> LET’S CREATE A LEGENDARY JOURNEY
-							</h2>
-						</div>
-						<div class="social-blok">
-							<a href="#" class="social-blok__item">
-								<img src="/img/insta.png" alt="" class="icon">
-							</a>
-							<a href="#" class="social-blok__item">
-								<img src="/img/linck.png" alt="" class="icon">
-							</a>
-							<a href="#" class="social-blok__item">
-								<img src="/img/twit.png" alt="" class="icon">
-							</a>
-							<a href="#" class="social-blok__item">
-								<img src="/img/be.png" alt="" class="icon">
-							</a>
-							<a href="#" class="social-blok__item">
-								<img src="/img/Dribbble.png" alt="" class="icon">
-							</a>
-							<p class="social-blok__text">
-								LONG 44.4280° N  LAT 110.5885° W
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide swiper-slide--fullscreen" data-hash="slide2">
-				<div class="container">
-					<div class="screen2">
-						<div class="screen2__title">
-							<img src="/img/N8tiv_logo.png" alt="title-logo" class="img-title">
-						</div>
-						<p class="screen2__text">
-							is an award-winning, Native American owned branding and design agency passionate 
-							about inventing, empowering, and building brands. Through strategic thinking and 
-							intelligent design, our mission is to create a unique customer journey that builds
-							lasting and meaningful relationships for our brands and their customers. We
-							accomplish this by crafting compelling stories and customer experiences that touch
-							people personally, bringing together culture and brand
-						</p>
-					</div>
-					<div class="screen2-secondary">
-						<div class="outline-wrap">
-							<h2 class="outline-tex">WE</h2>
-						</div>
-						<div class="outline-wrap-secondary">
-							<h2 class="outline-tex">ARE</h2>
-						</div>
-						<p class="screen2__text">
-							We are 100% Native American owned and recognized as a certified 8A business.
-							We are committed to the economic growth and prosperity of the sovereign nation 
-							territories and are investing in better futures for our people and our community.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide swiper-slide--fullscreen" data-hash="slide3">Slide main slider 3</div>
-			<div class="swiper-slide swiper-slide--fullscreen" data-hash="slide4">
-				<div class="swiper swiper--fullscreen-subpage">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide swiper-slide--fullscreen">Slide main slider 4</div>
-						<div class="swiper-slide swiper-slide--fullscreen">Slide subpage 2</div>
-						<div class="swiper-slide swiper-slide--fullscreen">Slide subpage 3</div>
-						<div class="swiper-slide swiper-slide--fullscreen">Slide subpage 4</div>
-						<div class="swiper-slide swiper-slide--fullscreen">Slide subpage 5</div>
-					</div>
-					<div class="swiper-pagination"></div>
-				</div>
-			</div>
-			<div class="swiper-slide swiper-slide--fullscreen" data-hash="slide5">
-				<div class="swiper swiper--fullscreen-subpage">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide swiper-slide--fullscreen">Slide main slider 5</div>
-						<div class="swiper-slide swiper-slide--fullscreen">Slide subpage 2</div>
-						<div class="swiper-slide swiper-slide--fullscreen">Slide subpage 3</div>
-					</div>
-					<div class="swiper-pagination"></div>
-				</div>
-			</div>
-		</div>
+	<div class="nav">
+		<a class="nav__toggle" href="#">
+			<i></i>
+			<i></i>
+			<i></i>
+		</a>
+		<ul class="nav__list" id="menu">
+			<li class="nav__item" data-menuanchor="home">
+				<a href="#home" class="nav__link"></a>
+			</li>
+			<li class="nav__item" data-menuanchor="weAre">
+				<a href="#weAre" class="nav__link">WE ARE</a>
+			</li>
+			<li class="nav__item" data-menuanchor="services">
+				<a href="#services" class="nav__link">SERVICES</a>
+			</li>
+			<li class="nav__item" data-menuanchor="ourWork">
+				<a href="#ourWork" class="nav__link">OUR WORK</a>
+			</li>
+			<li class="nav__item" data-menuanchor="customerCare">
+				<a href="#customerCare" class="nav__link">CUSTOMER CARE</a>
+			</li>
+			<li class="nav__item" data-menuanchor="connect">
+				<a href="#connect" class="nav__link">CONNECT</a>
+			</li>
+		</ul>
 	</div>
-	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-	<script src="./js/main.js"></script> 
+
+	<div id="fullpage">
+		<section class="vertical-scrolling">
+			<div class="video-background">
+				<div class="video-foreground">
+					<div class="section active" id="section0">
+						<video id="video" autoplay loop muted poster="">
+								<source  src="./img/bg-video.mp4" type="video/mp4" />
+						</video>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="screen1">
+					<div class="screen1__logo">
+						<img src="./img/logo-hero.png" alt="logo">
+					</div>
+					<div class="screen1__title">
+						<h2 class="title">
+							WHATEVER THE ROAD AHEAD OF US <br> TOGETHER WE RIDE <br> LET’S CREATE A LEGENDARY JOURNEY
+						</h2>
+					</div>
+					<div class="social-blok">
+						<a href="#" class="social-blok__item">
+							<img src="/img/insta.png" alt="" class="icon">
+						</a>
+						<a href="#" class="social-blok__item">
+							<img src="/img/linck.png" alt="" class="icon">
+						</a>
+						<a href="#" class="social-blok__item">
+							<img src="/img/twit.png" alt="" class="icon">
+						</a>
+						<a href="#" class="social-blok__item">
+							<img src="/img/be.png" alt="" class="icon">
+						</a>
+						<a href="#" class="social-blok__item">
+							<img src="/img/Dribbble.png" alt="" class="icon">
+						</a>
+						<p class="social-blok__text">
+							LONG 44.4280° N  LAT 110.5885° W
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="vertical-scrolling">
+			<div class="container">
+				<div class="screen2">
+					<div class="screen2__title">
+						<img src="/img/N8tiv_logo.png" alt="title-logo" class="img-title">
+					</div>
+					<p class="screen2__text">
+						is an award-winning, Native American owned branding and design agency passionate 
+						about inventing, empowering, and building brands. Through strategic thinking and 
+						intelligent design, our mission is to create a unique customer journey that builds
+						lasting and meaningful relationships for our brands and their customers. We
+						accomplish this by crafting compelling stories and customer experiences that touch
+						people personally, bringing together culture and brand
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="vertical-scrolling">
+			<div class="container">
+				<div class="screen2-secondary">
+					<div class="outline-wrap">
+						<h2 class="outline-tex">WE</h2>
+					</div>
+					<div class="outline-wrap-secondary">
+						<h2 class="outline-tex">ARE</h2>
+					</div>
+					<p class="screen2__text">
+						We are 100% Native American owned and recognized as a certified 8A business.
+						We are committed to the economic growth and prosperity of the sovereign nation 
+						territories and are investing in better futures for our people and our community.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="vertical-scrolling">
+			<div class="horizontal-scrolling">
+				<h2>fullPage.js</h2>
+				<h3>This is the fifth section and it contains the first slide (actually section == first slide)</h3>
+			</div>
+			<div class="horizontal-scrolling">
+				<h2>fullPage.js</h2>
+				<h3>This is the second slide</h3>
+				<p class="end">Thank you!</p>
+			</div>
+		</section>
+		<section class="vertical-scrolling">
+			<div class="horizontal-scrolling">
+				<h2>fullPage.js</h2>
+				<h3>This is the fifth section and it contains the first slide (actually section == first slide)</h3>
+			</div>
+			<div class="horizontal-scrolling">
+				<h2>fullPage.js</h2>
+				<h3>This is the second slide</h3>
+				<p class="end">Thank you!</p>
+			</div>
+		</section>
+		<section class="vertical-scrolling">
+			<div class="horizontal-scrolling">
+				<h2>fullPage.js</h2>
+				<h3>This is the fifth section and it contains the first slide (actually section == first slide)</h3>
+			</div>
+			<div class="horizontal-scrolling">
+				<h2>fullPage.js</h2>
+				<h3>This is the second slide</h3>
+				<p class="end">Thank you!</p>
+			</div>
+		</section>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+	<script src="./js/main.js"></script>
 </body>
 
 </html>

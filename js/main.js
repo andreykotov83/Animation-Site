@@ -1,17 +1,28 @@
 document.addEventListener( "DOMContentLoaded", function ( event ) {
-	new Swiper( ".swiper--fullscreen", {
-		direction: "vertical",
-		slidesPerView: 1,
-		mousewheel: true,
-		hashNavigation: true,
+	// variables
+	var $header_top = $( '.nav' );
+	var $nav = $( 'nav__toggle' );
+
+	// toggle menu 
+	$header_top.find( 'a' ).on( 'click', function () {
+		$( this ).parent().toggleClass( 'open-menu' );
 	} );
 
-	new Swiper( ".swiper--fullscreen-subpage", {
-		slidesPerView: 1,
-		hashNavigation: true,
-		pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
+	// fullpage customization
+	$( '#fullpage' ).fullpage( {
+		sectionsColor: [ '#FFF', '#E6E6E6', '#E6E6E6', '#FFF', '#FFF' ],
+		sectionSelector: '.vertical-scrolling',
+		slideSelector: '.horizontal-scrolling',
+		slidesNavigation: true,
+		anchors: [ 'home', 'weAre', 'services', 'ourWork', 'customerCare', 'connect' ],
+		menu: '#menu',
+
+		afterSlideLoad: function ( anchorLink, index, slideAnchor, slideIndex ) {
+			console.log('slideload');
 		},
+
+		onSlideLeave: function ( anchorLink, index, slideIndex, direction ) {
+			console.log('slideleave');
+		}
 	} );
 } );

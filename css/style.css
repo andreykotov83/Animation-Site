@@ -2,3 +2,84 @@
 	position: absolute;
 	z-index: 10;
 }
+
+h2,p{
+    margin: 0;
+    padding: 0;
+}
+
+video#video{
+    min-height: 100vh;
+    min-width: 100vw;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+/*     SCREEN 1 */
+
+.screen1 {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+
+.screen1__title {
+    text-align: center;
+}
+
+h2.title,
+p.social-blok__text {
+    color: #fff;
+}
+
+h2.title{
+    font-size: 35px;
+    line-height: 2;
+}
+
+img.icon {
+    width: 45px;
+    height: 45px;
+}
+
+/*     SCREEN 2   */
+
+.screen2__title{
+    text-align: center;
+}
+
+.screen2__text{
+    font-size: 26px;
+    line-height: 3;
+}
+
+.screen2-secondary{
+    position: relative;
+    padding-right: 170px;
+}
+
+.outline-wrap-secondary{
+    position: absolute;
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: -17%;
+    bottom: 0;
+}
+
+.outline-wrap {
+    margin-left: -10%;
+}
+
+.outline-tex{
+    font-size: 200px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px #707070;
+    letter-spacing: 30px;
+}
